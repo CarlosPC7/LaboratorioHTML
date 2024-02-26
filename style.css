@@ -1,0 +1,93 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #212429;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.container-nav {
+  display: flex;
+  background-color: white;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 30px;
+  justify-content: space-between;
+  border-width: 0px 0px 0.9px 0px;
+  border-bottom-color:  var(--secondary);
+  border-style: solid;
+  position: sticky;
+  top: 0;
+}
+.item-nav2 {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.item-nav2 a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+.item-nav3 {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.main {
+  padding:20px;
+}
+.titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+.container-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 25px;
+  gap: 45px;
+  background-color: var(--primary);
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  gap: 30px;
+}
+.img {
+  border-radius: 15px;
+}
+.PrecioProducto {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  margin-left: 25px;
+  margin-right: 25px;
+  justify-content: space-between;
+}
+.Precio {
+  font-weight: bold;
+}
+.Producto {
+  font-weight: normal;
+}
+
+.container-footer {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--primary);
+  background-color: var(--secondary);
+}
+.imgfooter {
+  background-color: var(--primary);
+  border-radius: 50px;
+  padding: 9px;
+  margin-right: 15px;
+}
+.item-footer {
+  display: flex;
+  align-items:center;
+}
