@@ -64,3 +64,7 @@ Creamos el contenido principal "main", en el que añadimos el título H2, y crea
 ## Código CSS ancho pantalla
 
 ![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/3d9901a7-7424-4a2a-889f-6e6a15239e87)
+
+# RESULTADO
+
+http://127.0.0.1:3000/Paginaropa.html
