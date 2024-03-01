@@ -3,242 +3,64 @@
 
 Creamos el contenido principal "main", en el que añadimos el título H2, y creamos un container-main con sus respectivas divisiones en div, en el que se incluye la foto, la descripción y el precio:
 
-<main class="main">
-    <h2 class="titulo">NUEVAS COLECCIONES</h2>
-    <div class="container-main">
-        <div class="item">
-            <img class="img" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/images/image-3.jpg" alt="Vestido celeste" title="Vestido celeste">
-            <div class="PrecioProducto">
-                <span class="Producto">Vestido</span>
-                <span class="Precio">34,99 €</span>
-            </div>
-        </div>
-        <div class="item">
-            <img class="img" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/images/image-6.jpg" alt="Camisa amarilla" title="Camisa amarilla">
-            <div class="PrecioProducto">
-                <span class="Producto">Camisa</span>
-                <span class="Precio">44,99 €</span>
-            </div>
-        </div>
-        <div class="item">
-            <img class="img" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/images/image-4.jpg" alt="Vaqueros" title="Vaqueros">
-           <div class="PrecioProducto">
-                <span class="Producto">Vaqueros</span>
-                <span class="Precio">79,99 €</span>
-            </div>
-        </div>
-        <div class="item">
-            <img class="img" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/images/image-5.jpg" alt="Polo beige" title="Polo beige">
-            <div class="PrecioProducto">
-                <span class="Producto">Polo</span>
-                <span class="Precio">44,95 €</span>
-            </div>
-        </div>
-        <div class="item">
-            <img class="img" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/images/image-1.jpg" alt="Camisa blanco sucio" title="Camisa blanco sucio">
-            <div class="PrecioProducto">
-                <span class="Producto">Camisa</span>
-                <span class="Precio">25,00 €</span>
-            </div>
-        </div>
-        <div class="item">
-            <img class="img" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/images/image-2.jpg" alt="Camiseta blanca" title="Camiseta blanca">
-            <div class="PrecioProducto">
-                <span class="Producto">Camiseta</span>
-                <span class="Precio">22,99 €</span>
-            </div>
-        </div>
-    </div>
-    </main>
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/4b83d0c9-be28-4d8a-840f-96c6f1d09851)
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/bc0d4e44-f3a2-42cc-9590-c77e6f771b37)
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/6f067616-0227-45a6-90b4-51bf1676341b)
+
 
 ## Código CSS
 
 - Para main, aplicamos un padding para separarlo del menú de navegación y del footer. definimos el estilo del título.
-.main {
-  padding: 16px;
-}
-.titulo {
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-}
+
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/63d812f2-8864-4d6a-bcaa-308fe56ec6d5)
+
 - Aplicamos display grid a container-main que es donde tenemos clasificados los items, así como márgenes y el formato columnas.
-.container-main {
-  display: grid;
-  max-width: 1280px;
-  grid-template-columns: repeat(3, 1fr);
-  margin-left: 110px;
-  margin-right: 110px;
-  margin-bottom: 32px;
-  gap: 64px;
-  background-color: var(--primary);
-}
+
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/7686de04-5af1-453a-b205-aa086ef82a80)
+
 - A cada item (foto y su precio), le añadimos display flex - column, a la imagen, borde.
-.item {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.img {
-  border-radius: 16px;
-}
+
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/198a040f-bba5-47c9-95e1-5c4a78809238)
+
 - También le damos formato a la descripción y al precio.
-.PrecioProducto {
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  margin-left: 24px;
-  margin-right: 24px;
-  justify-content: space-between;
-}
-.Precio {
-  font-weight: bold;
-}
-.Producto {
-  font-weight: normal;
-}
+
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/243fb722-b167-4536-a081-3556b2d71cb6)
+
 
 # Apartado opcional
 
 ## Código HTML barra navegación
- <nav class="container-nav">
-            <div class="item-nav1">
-                <img src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/icons/icon-menu-burguer.svg" alt="Desplegable">
-            </div>
-            <div class="item-nav2">
-                <div class="menu1">
-                <a href="Moda mujer">MODA MUJER</a>
-                </div>
-                <div class="menu2">
-                <a href="Moda hombre">MODA HOMBRE</a>
-                </div>
-                <div class="menu3">
-                <a href="Nueva colección">NUEVA COLECCIÓN</a>
-                </div>
-                <div class="menu4">
-                <a href="Colecciones especiales">COLECCIONES ESPECIALES</a>
-                </div>
-            </div>
-            <div class="item-nav3">
-                <div class="imgnav2">
-                <img src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/icons/icon-user.svg" alt="Sign in">
-                </div>
-                <div class="imgnav3">
-                <img src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/icons/icon-heart.svg" alt="Wish list">
-                </div>
-                <div class="imgnav4">
-                <img src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/icons/icon-shopping-cart.svg" alt="Purchase">
-                </div>
-            </div>
-    </nav>
+
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/81213014-2aeb-418e-9a18-c4bb70737d65)
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/fb56d88f-2a9c-4015-8d1e-ae6660b0f2f8)
+
 
 ## Código CSS barra navegación
 
 - Añadimos display flex, con los respectivos formatos de estilo, así como position sticky y borde inferior
-.container-nav {
-  display: flex;
-  background-color: white;
-  font-size: 16px;
-  font-weight: normal;
-  padding: 32px;
-  justify-content: space-between;
-  border-width: 0px 0px 0.9px 0px;
-  border-bottom-color: var(--secondary);
-  border-style: solid;
-  position: sticky;
-  top: 0;
-}
-- A los items de la barra de navegación, del menú principal e iconos de la derecha, le añadimos display grid.
-.item-nav2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
 
-.item-nav2 a {
-  color: var(--secondary);
-  text-decoration: none;
-}
-.item-nav3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-}
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/606e1835-e681-4502-a52e-d71987f1c372)
+
+- A los items de la barra de navegación, del menú principal e iconos de la derecha, le añadimos display grid.
+
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/ff368910-c5c0-4ab1-9d34-6540880f0a67)
 
 ## Código HTML footer
 
 - El footer lo dividimos en diferentes div con su imagen y texto correspondiente.
-<footer>
-        <div class="container-footer">
-            <div class="item-footer">
-                <div class="imgfooter">
-                <img src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/icons/icon-truck.svg" alt="Entrega">
-                </div>
-                Entrega
-            </div>
-            <div class="item-footer">
-                Devoluciones y cambios
-            </div>
-            <div class="item-footer">
-                <div class="imgfooter">
-                <img src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/icons/icon-phone.svg" alt="Teléfono">
-                </div>
-                +375 (29) 749-18-23
-            </div>
-            <div class="item-footer">
-                <div class="imgfooter">
-                <img src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/online-shop/icons/icon-mail.svg" alt="Email">
-                </div>
-                shop@omix.com
-            </div>
-        </div>
-    </footer>
+
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/fcf95832-cdb4-4ad8-913e-1950687f707e)
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/101ef515-648d-43f6-ac4d-2335cd081901)
+
 
 ## Código CSS footer
 
 - Le añadimos display flex, le damos diferentes formatos requeridos, a la imagen le aplicamos un border radius y al item un align items center.
-.container-footer {
-  display: flex;
-  padding: 32px;
-  justify-content: space-between;
-  font-size: 16px;
-  font-weight: normal;
-  color: var(--primary);
-  background-color: var(--secondary);
-}
-.imgfooter {
-  background-color: var(--primary);
-  border-radius: 64px;
-  padding: 8px;
-  margin-right: 16px;
-}
-.item-footer {
-  display: flex;
-  align-items: center;
-}
+
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/167fad87-2676-4207-acba-c8adb71d0e0b)
 
 # Apartado extra
 
 ## Código CSS ancho pantalla
 
-@media (max-width: 920px) {
-  .container-footer {
-    flex-direction: column;
-    gap: 32px;
-  }
-  .item-footer {
-    padding-bottom: 16px;
-    border-bottom: 1px solid var(--primary);
-  }
-  .item-nav1 {
-    margin: 0 auto;
-  }
-  .item-nav2 {
-    display: none;
-  }
-  .item-nav3 {
-    display: none;
-  }
-  .container-main {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
+![image](https://github.com/CarlosPC7/LaboratorioHTML/assets/156413536/3d9901a7-7424-4a2a-889f-6e6a15239e87)
